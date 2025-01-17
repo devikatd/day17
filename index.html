@@ -1,145 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hotel Menu</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f9f9f9;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Navigation bar styling */
-        nav {
-            background-color: #333;
-            overflow: hidden;
-        }
-
-        nav a {
-            float: left;
-            display: block;
-            color: white;
-            text-align: center;
-            padding: 14px 20px;
-            text-decoration: none;
-        }
-
-        nav a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-
-        /* Main content area */
-        main {
-            padding: 20px;
-            text-align: center;
-        }
-
-        h1 {
-            color: #333;
-        }
-
-        .dishes-container {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-
-        .dish-card {
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            width: 200px;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .dish-card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .dish-card button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-
-        .dish-card button:hover {
-            background-color: #45a049;
-        }
-
-        /* Footer styling */
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 20px 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devika TD - Web Developer</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <div class="container">
+      <h1>Devika TD</h1>
+      <p>Web Developer</p>
+    </div>
+  </header>
 
-    <!-- Navigation Bar -->
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">Menu</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact details</a>
-    </nav>
+  <section id="about">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>Hello! I'm Devika TD, a passionate web developer with experience in creating beautiful, functional websites. I specialize in front-end development, working with HTML, CSS, JavaScript, and React. My goal is to build responsive and user-friendly websites.</p>
+    </div>
+  </section>
 
-    <!-- Main Content -->
-    <main>
-        <h1>Welcome to Our   DEVIKASSS shoes Menu</h1>
-        <p>Select a dish to order</p>
+  <section id="skills">
+    <div class="container">
+      <h2>Skills</h2>
+      <ul>
+        <li>HTML & CSS</li>
+        <li>JavaScript</li>
+        <li>React.js</li>
+        <li>Responsive Design</li>
+        <li>Web Accessibility</li>
+      </ul>
+    </div>
+  </section>
 
-        <div class="dishes-container">
-            <!-- Dish 1 -->
-            <div class="dish-card">
-                <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcRU4OlxNlFT4EBzC2ogkWPybRjk3j_VQAW1SpnmxcAt0ve35owLfyTitJYTv29rmQafznYe47gPSniTgF0hP3UUG6SAlVOEHIqzgjbRaYih&usqp=CAE" alt="model 1">
-                <h3>1 - Shoes1</h3>
-                <button>Order Now</button>
-            </div>
+  <section id="contact">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <p>If you'd like to work together or have any questions, feel free to reach out!</p>
+      <form action="mailto:devikagd@example.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-            <!-- Dish 2 -->
-            <div class="dish-card">
-                <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQU2i7xqNFpAj9DATRk5ExPjFZy0LhcjOZvGPkNs8JY0spBmVGqed7GVnTAT9g1ZoQ5YbMsSn1kSZJ_9P3dgDU2uPD7lxuEDSzEVzb0dlxwwyHns8REjjdNZA&usqp=CAE" alt="model 2">
-                <h3> 2 - shoes2</h3>
-                <button>Order Now</button>
-            </div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
 
-            <!-- Dish 3 -->
-            <div class="dish-card">
-                <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSCBwUu2WbHCpXry78oj_ebMB5MEqM4Cdk2AEB2LKhdzppRgaiyjVmTthnVem3byrhdwWGJGJq0KyHnb3YxeZxYsCFfBuehV8_n7N9Sn34vSgUgf3Jk96Fbcw&usqp=CAE" alt="model 3">
-                <h3>3 - Shoes3</h3>
-                <button>Order Now</button>
-            </div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
-            <!-- Dish 4 -->
-            <div class="dish-card">
-                <img src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcT_zelK5q9sJW4QcrctI8zJdIqaTOv-1AjQpvWEphUyCe9R3v2-btPNAuGETeDeQZ5pygY3-hFBjrXmJYZgNos-qI6MuDk9Bqy3Rh4QMK_r&usqp=CAE alt"="model 5">
-                <h3> 4 - shoes4</h3>
-                <button>Order Now</button>
-            </div>
-        </div>
-    </main>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 . All rights reserved.</p>
-        <p>1234 St, City Name, Country</p>
-        <p>Phone: (123) 456-7890</p>
-    </footer>
-
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Devika TD. All rights reserved.</p>
+    </div>
+  </footer>
 </body>
 </html>
+
+  
+
+       
+           
